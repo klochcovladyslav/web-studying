@@ -1,0 +1,7 @@
+/* footer css rules */
+.end-footer-box {
+    display: flex;
+    align-items: top;
+    justify-content: space-around;
+    border-top: 2px solid black;
+}
