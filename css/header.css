@@ -1,0 +1,30 @@
+/* header rules */
+header {
+    font-size: 1.3em;
+}
+
+.header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+/* REMAKE! */
+.logo-header-box {
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+}
+
+.list-header-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.list-header-box li {
+    margin: 10px;
+}
