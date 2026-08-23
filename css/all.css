@@ -3,9 +3,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Spectral';
 }
 img{
     width: 100%;
 }
 body{
+    position: relative;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
