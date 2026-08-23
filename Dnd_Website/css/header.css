@@ -1,0 +1,122 @@
+/* header rules */
+header {
+    font-size: 1.3em;
+    text-transform: uppercase;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* ^ main font size here
+   | 
+*/
+
+
+
+/* main line ------- */
+.header-box {
+    display: flex;
+
+
+    width: 100vw;
+    height: 100px;
+
+
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    border: 3px solid cornflowerblue;
+    box-shadow: inset 0px -5px 20px -5px cornflowerblue;
+    background: #070B14;
+
+}
+
+
+
+/* logo box line img+p */
+.logo-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+}
+
+.logo-header-box p {
+    line-height: 1;
+    width: 90px;
+    color: aliceblue;
+}
+
+
+/* list box span+(ul>li*4>a)+span*/
+.list-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-header-box span {
+    color: cornflowerblue;
+}
+
+.list-header-box ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.list-header-box li {
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+.list-header-box a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+/* Navigation header box-> (login box) + (burger box btn) */
+.navigation-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* login box */
+.login-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    margin: 15px;
+    padding: 5px;
+
+    border: 2px solid cornflowerblue;
+    border-radius: 50%;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 10px cornflowerblue;
+}
+
+.login-header-box span {
+    display: flex;
+}
+
+
+@media (width <=768px) {}

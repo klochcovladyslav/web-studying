@@ -1,0 +1,13 @@
+/* main rules */
+.search-main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.search-bar input{
+
+}
+.card-storage-box{
+    
+}
