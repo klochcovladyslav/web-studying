@@ -1,3 +1,28 @@
+main {
+    background-color: #070B14;
+    color: aliceblue;
+}
+
+.description-container {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-image: url(../img/top-123.png);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.description-container-box {
+    width: 300px;
+}
+
+ 
+
+
+
 .actions-container {
     display: flex;
     align-items: center;
