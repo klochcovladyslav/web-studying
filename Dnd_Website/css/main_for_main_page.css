@@ -1,38 +1,152 @@
+/* main rules for main page */
 main {
     background-color: #070B14;
-    color: aliceblue;
-}
+    color: #F5F5F7;
+    padding: 25px;
 
-.description-container {
-    margin: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-
-    background-image: url(../img/top-123.png);
-    background-position: left;
-    background-size: contain;
+    background-image: url(../img/library_image_description.png);
+    background-position: top right;
+    background-size: 600px 400px;
     background-repeat: no-repeat;
 }
 
-.description-container-box {
-    width: 300px;
+
+/* its covering all main things */
+.main-cover-container {
+    /* border: 2px solid red; */
 }
 
- 
 
+/* its description desc>desc-text>span+h2+p */
+.description-container {
+    /* border: 2px solid wheat; */
 
-
-.actions-container {
     display: flex;
     align-items: center;
-    margin-top: 90px;
+    justify-content: left;
+    margin: 0px 50px;
+}
+
+.description-text-box {
+    /* border: 2px solid red; */
+
+    max-width: 400px;
+    /* background-image: url(../img/magic_circle_description.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+.description-text-box span {
+    color: cornflowerblue;
+}
+
+.blue-span {
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.description-text-box h2 {
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.2;
+
+    margin: 15px 0px;
+}
+
+.description-text-box p {
+    margin: 15px 0px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.description-text-box input {
+    padding: 5px 7px;
+    padding-left: 35px;
+    color: #F5F5F7;
+    width: 80%;
+
+    background: transparent;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(245, 245, 247, 0.7)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E");
+
+    outline: none;
+    border: 2px solid rgba(100, 148, 237, 0.873);
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 7px rgba(100, 148, 237, 0.81);
+}
+
+.description-text-box input:not(:placeholder-shown) {
+    background-image: none;
+    padding-left: 10px;
+}
+
+.description-text-box button {
+    padding: 7px 10px;
+    margin-left: 20px;
+
+    border-radius: 5px;
+    border: none;
+
+    background-color: royalblue;
+    box-shadow: 0px 0px 3px cornflowerblue;
+    color: #F5F5F7;
+text-transform: uppercase;
+
+    transition: 0.5s;
+}
+
+.description-text-box button:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0px 0px 6px cornflowerblue;
+
+}
+
+/* what you can pick */
+.actions-container {
+    /* border: 2px solid green; */
+
+    display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .action-box {
+
     margin: 25px 10px;
     max-width: 500px;
-    border: 2px solid black;
+    border: 2px solid cornflowerblue;
+    box-shadow: inset 0px 0px 10px cornflowerblue;
+}
+
+
+@media (width <=768px) {
+    .description-container {
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 10px #070b14bf;
+        background-color: #070b14bf;
+
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .description-text-box span,
+    h2,
+    p {
+        -webkit-text-stroke: 3px black;
+        paint-order: stroke fill;
+    }
+
+
+
+    .action-box {
+        max-width: 400px;
+    }
 }
