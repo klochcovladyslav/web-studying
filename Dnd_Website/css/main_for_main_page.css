@@ -13,28 +13,31 @@ main {
 
 /* its covering all main things */
 .main-cover-container {
-    /* border: 2px solid red; */
 }
 
 
 /* its description desc>desc-text>span+h2+p */
 .description-container {
-    /* border: 2px solid wheat; */
-
     display: flex;
     align-items: center;
     justify-content: left;
-    margin: 0px 50px;
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .description-text-box {
-    /* border: 2px solid red; */
-
+    position: relative;
     max-width: 400px;
-    /* background-image: url(../img/magic_circle_description.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
+}
+
+.green-gem {
+    width: 20px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
 }
 
 .description-text-box span {
@@ -97,7 +100,7 @@ main {
     background-color: royalblue;
     box-shadow: 0px 0px 3px cornflowerblue;
     color: #F5F5F7;
-text-transform: uppercase;
+    text-transform: uppercase;
 
     transition: 0.5s;
 }
@@ -107,6 +110,8 @@ text-transform: uppercase;
     box-shadow: 0px 0px 6px cornflowerblue;
 
 }
+
+
 
 /* what you can pick */
 .actions-container {
@@ -119,11 +124,30 @@ text-transform: uppercase;
 }
 
 .action-box {
-
+padding: 25px;
     margin: 25px 10px;
-    max-width: 500px;
+    
+    width: 300px;
+
+    border-radius: 10px;
     border: 2px solid cornflowerblue;
     box-shadow: inset 0px 0px 10px cornflowerblue;
+}
+
+.action-img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    margin: 15px;
+    padding: 7px;
+
+    border: 2px solid cornflowerblue;
+    border-radius: 50%;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 10px cornflowerblue;
 }
 
 
@@ -134,7 +158,10 @@ text-transform: uppercase;
         background-color: #070b14bf;
 
         justify-content: center;
-        margin: 0px;
+        
+        
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .description-text-box span,
