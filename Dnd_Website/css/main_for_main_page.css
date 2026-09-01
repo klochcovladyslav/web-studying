@@ -6,14 +6,13 @@ main {
 
     background-image: url(../img/library_image_description.png);
     background-position: top right;
-    background-size: 600px 400px;
+    background-size: 550px 350px;
     background-repeat: no-repeat;
 }
 
 
 /* its covering all main things */
-.main-cover-container {
-}
+.main-cover-container {}
 
 
 /* its description desc>desc-text>span+h2+p */
@@ -106,7 +105,7 @@ main {
 }
 
 .description-text-box button:hover {
-    transform: translateY(-10px) scale(1.1);
+    transform: translateY(-5px) scale(1.1);
     box-shadow: 0px 0px 6px cornflowerblue;
 
 }
@@ -124,31 +123,97 @@ main {
 }
 
 .action-box {
-padding: 25px;
+    padding: 25px;
     margin: 25px 10px;
-    
+
     width: 300px;
 
     border-radius: 10px;
-    border: 2px solid cornflowerblue;
-    box-shadow: inset 0px 0px 10px cornflowerblue;
+    border: 2px solid powderblue;
+    box-shadow: inset 0px 0px 10px powderblue;
 }
 
-.action-img-box{
+.action-box>h2>a {
+    text-decoration: none;
+    color: #F5F5F7;
+    text-transform: uppercase;
+}
+
+.action-box p {
+    padding: 10px 0px;
+    color: #eaeaea;
+}
+
+.description-box a {
+    padding: 10px 0px;
+
+    font-size: 0.9em;
+    text-decoration: none;
+    color: cornflowerblue;
+    text-transform: uppercase;
+}
+
+
+
+.action-img-box {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 50px;
-    margin: 15px;
+    width: 60px;
+    height: 60px;
+    margin: 15px 0px;
     padding: 7px;
 
-    border: 2px solid cornflowerblue;
+    border: 2px solid powderblue;
     border-radius: 50%;
     overflow: hidden;
 
+    box-shadow: 0px 0px 10px powderblue;
+}
+
+
+/*  */
+.cornflover-blue-action {
+    border: 2px solid cornflowerblue;
+    box-shadow: inset 0px 0px 10px cornflowerblue;
+}
+
+.cornflover-blue-action .action-img-box {
+    border: 2px solid cornflowerblue;
     box-shadow: 0px 0px 10px cornflowerblue;
 }
+
+/*  */
+
+
+
+/*  */
+.tidal-action {
+    border: 2px solid #66D6E0;
+    box-shadow: inset 0px 0px 10px #66D6E0;
+}
+
+.tidal-action .action-img-box {
+    border: 2px solid #66D6E0;
+    box-shadow: 0px 0px 10px #66D6E0;
+}
+
+/*  */
+
+
+/*  */
+.dm-action {
+    border: 2px solid #A383FC;
+    box-shadow: inset 0px 0px 10px #A383FC;
+}
+
+.dm-action .action-img-box {
+    border: 2px solid #A383FC;
+    box-shadow: 0px 0px 10px #A383FC;
+}
+
+/*  */
 
 
 @media (width <=768px) {
@@ -158,8 +223,8 @@ padding: 25px;
         background-color: #070b14bf;
 
         justify-content: center;
-        
-        
+
+
         margin-left: 0px;
         margin-right: 0px;
     }
