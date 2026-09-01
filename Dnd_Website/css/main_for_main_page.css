@@ -123,13 +123,17 @@ main {
 }
 
 .action-box {
+    background: url(../img/lib.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
     padding: 25px;
     margin: 25px 10px;
 
     width: 300px;
 
     border-radius: 10px;
-    border: 2px solid powderblue;
+    border: 1px solid powderblue;
     box-shadow: inset 0px 0px 10px powderblue;
 }
 
@@ -175,7 +179,12 @@ main {
 
 /*  */
 .cornflover-blue-action {
-    border: 2px solid cornflowerblue;
+    background: url(../img/spell_circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+    border: 1px solid cornflowerblue;
     box-shadow: inset 0px 0px 10px cornflowerblue;
 }
 
@@ -190,7 +199,11 @@ main {
 
 /*  */
 .tidal-action {
-    border: 2px solid #66D6E0;
+    background: url(../img/bestiary_monster.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    border: 1px solid #66D6E0;
     box-shadow: inset 0px 0px 10px #66D6E0;
 }
 
@@ -204,7 +217,13 @@ main {
 
 /*  */
 .dm-action {
-    border: 2px solid #A383FC;
+    background: url(../img/dm_table.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+
+    border: 1px solid #A383FC;
     box-shadow: inset 0px 0px 10px #A383FC;
 }
 
