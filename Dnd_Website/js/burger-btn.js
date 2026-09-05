@@ -7,5 +7,5 @@ for (let i = 0; i < burgerSpans.length; i++) {
     burgerBtn.addEventListener('click', () => {
         listBox.classList.toggle('list-header-box-toggle');
         burgerSpan.classList.toggle('burger-span-' + [i + 1] + '-toggle')
-    })
+    });
 }
