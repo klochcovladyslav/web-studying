@@ -5,12 +5,25 @@
     margin: 0;
     font-family: 'Spectral';
 }
-img{
+
+img {
     width: 100%;
 }
-body{
+
+body {
     position: relative;
 }
+
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
+}
+
+
+.browse-more-link {
+    padding: 10px 0px;
+
+    font-size: 0.9em;
+    text-decoration: none;
+    color: cornflowerblue;
+    text-transform: uppercase;
 }
