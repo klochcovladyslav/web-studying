@@ -11,104 +11,8 @@ main {
 }
 
 
-/* its covering all main things */
+/* its covering all main things - now do nothing*/
 .main-cover-container {}
-
-
-/* its description desc>desc-text>span+h2+p */
-.description-container {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-
-    margin-top: 25px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.description-text-box {
-    position: relative;
-    max-width: 400px;
-}
-
-.green-gem {
-    width: 20px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-}
-
-.description-text-box span {
-    color: cornflowerblue;
-}
-
-.blue-span {
-    text-transform: uppercase;
-    font-size: 0.7em;
-}
-
-.description-text-box h2 {
-    font-size: 2em;
-    font-weight: 400;
-    line-height: 1.2;
-
-    margin: 15px 0px;
-}
-
-.description-text-box p {
-    margin: 15px 0px;
-}
-
-.input-container {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-}
-
-.description-text-box input {
-    padding: 5px 7px;
-    padding-left: 35px;
-    color: #F5F5F7;
-    width: 80%;
-
-    background: transparent;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    background-size: 20px 20px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(245, 245, 247, 0.7)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z'/%3E%3C/svg%3E");
-
-    outline: none;
-    border: 2px solid rgba(100, 148, 237, 0.873);
-    border-radius: 5px;
-    box-shadow: inset 0px 0px 7px rgba(100, 148, 237, 0.81);
-}
-
-.description-text-box input:not(:placeholder-shown) {
-    background-image: none;
-    padding-left: 10px;
-}
-
-.description-text-box button {
-    padding: 7px 10px;
-    margin-left: 20px;
-
-    border-radius: 5px;
-    border: none;
-
-    background-color: royalblue;
-    box-shadow: 0px 0px 3px cornflowerblue;
-    color: #F5F5F7;
-    text-transform: uppercase;
-
-    transition: 0.5s;
-}
-
-.description-text-box button:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0px 0px 6px cornflowerblue;
-
-}
 
 
 
@@ -121,21 +25,32 @@ main {
     justify-content: space-evenly;
 }
 
+/* boxes */
 .action-box {
-    background: url(../img/lib.png);
+    padding: 25px;
+    margin: 25px 10px;
+    width: 300px;
+    border-radius: 10px;
+
     background-repeat: no-repeat;
     background-size: contain;
 
-    padding: 25px;
-    margin: 25px 10px;
-
-    width: 300px;
-
-    border-radius: 10px;
-    border: 1px solid powderblue;
-    box-shadow: inset 0px 0px 10px powderblue;
 }
 
+.action-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    margin: 15px 0px;
+    padding: 7px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
 
 .action-box>h2>a {
     text-decoration: none;
@@ -148,42 +63,32 @@ main {
     color: #eaeaea;
 }
 
-.description-box a {
-    padding: 10px 0px;
-
-    font-size: 0.9em;
-    text-decoration: none;
-    color: cornflowerblue;
-    text-transform: uppercase;
-}
-
-
-.action-img-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 60px;
-    height: 60px;
-    margin: 15px 0px;
-    padding: 7px;
-
-    border: 2px solid powderblue;
-    border-radius: 50%;
-    overflow: hidden;
-
-    box-shadow: 0px 0px 10px powderblue;
-}
-
 
 
 /* Types of different colour */
+/* Powderblue */
+.powder-blue-action {
+    background: url(../img/lib.png);
+
+    border: 1px solid powderblue;
+    box-shadow: inset 0px 0px 10px powderblue;
+}
+
+.powder-blue-action .action-img-box {
+    border: 2px solid powderblue;
+    box-shadow: 0px 0px 10px powderblue;
+}
+
+.powder-blue-action .browse-more-link {
+    color: powderblue;
+}
+
 /*  */
+
+
+/* Cornflower-blue */
 .cornflover-blue-action {
     background: url(../img/spell_circle.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
 
     border: 1px solid cornflowerblue;
     box-shadow: inset 0px 0px 10px cornflowerblue;
@@ -194,15 +99,16 @@ main {
     box-shadow: 0px 0px 10px cornflowerblue;
 }
 
+.cornflover-blue-action .browse-more-link {
+    color: cornflowerblue;
+}
+
 /*  */
 
 
-
-/*  */
+/* Tidal */
 .tidal-action {
     background: url(../img/bestiary_monster.png);
-    background-repeat: no-repeat;
-    background-size: contain;
 
     border: 1px solid #66D6E0;
     box-shadow: inset 0px 0px 10px #66D6E0;
@@ -213,16 +119,16 @@ main {
     box-shadow: 0px 0px 10px #66D6E0;
 }
 
+.tidal-action .browse-more-link {
+    color: #66D6E0;
+}
+
 /*  */
 
 
-/*  */
+/* Dm-violet */
 .dm-action {
     background: url(../img/dm_table.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-
-
 
     border: 1px solid #A383FC;
     box-shadow: inset 0px 0px 10px #A383FC;
@@ -233,31 +139,33 @@ main {
     box-shadow: 0px 0px 10px #A383FC;
 }
 
+.dm-action .browse-more-link {
+    color: #A383FC;
+}
+
 /*  */
 
 
+
+/* same for every action: */
+.powder-blue-action,
+.cornflover-blue-action,
+.tidal-action,
+.dm-action {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+/*  */
+
+
+
 @media (width <=768px) {
-    .description-container {
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px 10px #070b14bf;
-        background-color: #070b14bf;
-
-        justify-content: center;
-
-
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .description-text-box span,
-    h2,
-    p {
-        -webkit-text-stroke: 3px black;
-        paint-order: stroke fill;
-    }
-
     .action-box {
-            width: 400px;
-            margin: 15px 0px;
+        width: 400px;
+        margin: 15px 0px;
     }
 }

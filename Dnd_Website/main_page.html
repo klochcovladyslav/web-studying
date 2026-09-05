@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/burgerbtn.css">
     <link rel="stylesheet" href="./css/main_for_main_page.css">
+    <link rel="stylesheet" href="./css/main_for_main_page_description_box.css">
     <link rel="stylesheet" href="./css/footer.css">
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -75,74 +76,105 @@
         <div class="main-cover-container">
             <!-- What is the site about container -->
             <div class="description-container">
+
+                <!-- desc-text-box is "justified" to left + have width in percents -->
                 <div class="description-text-box">
+
+                    <!-- only img here for design -->
                     <img class="green-gem" src="img/green-gem.png" alt="">
 
+                    <!-- everything else here is just in a row with flex-direct-column -->
                     <span>&#9670;</span>
+
                     <span class="blue-span">Your organised adventure </span>
+
                     <h2>Everything you need for your next <span>adventure</span></h2>
+
                     <p>Explore our digital library of books, homebrew content, spells, monsters and tools for players
                         and
-                        Dungeon Masters.</p>
-                    <div class="input-container"><input name="Search" placeholder="Search in library for..." type="text">
+                        Dungeon Masters.
+                    </p>
+
+                    <!-- the hardest part for me - img inside input is on bg -->
+                    <div class="input-container"><input name="Search" placeholder="Search in library for..."
+                            type="text">
                         <button>Search</button>
                     </div>
+
                 </div>
             </div>
 
 
 
 
-            <!-- Choose what you need container -->
+            <!-- Choose what link/action you need container -->
             <div class="actions-container">
 
 
+                <!-- first-action - powder-blue -->
+                <div class="action-box powder-blue-action">
 
-                <div class="action-box">
+                    <!-- img -->
                     <div class="action-img-box"><img src="img/library.png" alt=""></div>
 
+                    <!-- link -->
                     <h2><a href="">Library</a></h2>
 
+                    <!-- description -->
                     <div class="description-box">
-
                         <p>Books, guides, adventures, homebrew content and more...</p>
-                        <a href="">Browse more -></a>
+                        <a class="browse-more-link" href="">Browse more -></a>
                     </div>
                 </div>
 
+
+                <!-- second-action - cornflower-blue -->
                 <div class="action-box cornflover-blue-action">
+
+                    <!-- img -->
                     <div class="action-img-box"><img src="img/spells.png" alt=""></div>
 
+                    <!-- link -->
                     <h2><a href="">Spells</a></h2>
 
+                    <!-- description -->
                     <div class="description-box">
-
                         <p>Books, guides, adventures, homebrew content and more...</p>
-                        <a href="">Browse more -></a>
+                        <a class="browse-more-link" href="">Browse more -></a>
                     </div>
                 </div>
 
+
+                <!-- third-action - tidal -->
                 <div class="action-box tidal-action">
+
+                    <!-- img -->
                     <div class="action-img-box"><img src="img/bestiary.png" alt=""></div>
 
+                    <!-- link -->
                     <h2><a href="">Bestiary</a></h2>
 
+                    <!-- description -->
                     <div class="description-box">
-
                         <p>Books, guides, adventures, homebrew content and more...</p>
-                        <a href="">Browse more -></a>
+                        <a class="browse-more-link" href="">Browse more -></a>
                     </div>
                 </div>
 
+
+                <!-- fourth-action - dm-violet -->
                 <div class="action-box dm-action">
+
+                    <!-- img -->
                     <div class="action-img-box"><img src="img/DM.png" alt=""></div>
 
+                    <!-- link -->
                     <h2><a href="">DM Stuff</a></h2>
 
+                    <!-- description -->
                     <div class="description-box">
-
                         <p>Books, guides, adventures, homebrew content and more...</p>
-                        <a href="">Browse more -></a>
+                        <a class="browse-more-link" href="">Browse more -></a>
                     </div>
                 </div>
 
@@ -166,8 +198,8 @@
                             <h3>Welcome, adventurer</h3>
                             <p>This is your personal hub for everything D&D. Organize your campaigns, save your
                                 favourite content and bring your stories to life.</p>
-                                <button>Sign in to your account</button>
-                                <p>New here? <a href="">Create an account</a></p>
+                            <button>Sign in to your account</button>
+                            <p>New here? <a href="">Create an account</a></p>
                         </div>
                         <div class="img-block"><img src="" alt=""></div>
                     </div>
@@ -177,6 +209,7 @@
                     </div>
 
                 </div>
+
 
             </div>
         </div>
