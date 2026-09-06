@@ -1,6 +1,6 @@
 async function loadRandomQuote() {
     try {
-        const response = await fetch("../json/hundred_tips.json");
+        const response = await fetch("./json/hundred_tips.json");
         const quotes = await response.json();
 
         const randomIndex = Math.floor(Math.random() * quotes.length);
