@@ -12,4 +12,6 @@ main {
 
 
 /* its covering all main things - now do nothing*/
-.main-cover-container {}
+.main-cover-container {
+    /* padding: 0px 15px; */
+}

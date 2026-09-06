@@ -10,13 +10,9 @@
 /* boxes */
 .action-box {
     padding: 25px;
-    margin: 25px 10px;
+    margin: 25px 15px;
     width: 300px;
     border-radius: 10px;
-
-    background-repeat: no-repeat;
-    background-size: contain;
-
 }
 
 .action-img-box {
@@ -136,6 +132,8 @@
 .dm-action {
     background-repeat: no-repeat;
     background-size: contain;
+    
+    background-color: #070B14;
 }
 
 
@@ -147,7 +145,10 @@
 
 @media (width <=768px) {
     .action-box {
-        width: 400px;
-        margin: 15px 0px;
+        width: 500px;
+        margin: 15px 10px;
     }
+
 }
+
+
