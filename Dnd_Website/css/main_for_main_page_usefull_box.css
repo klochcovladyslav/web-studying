@@ -1,0 +1,50 @@
+.usefull-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.left-usefull-block {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin: 15px 15px;
+
+
+    border-radius: 15px;
+
+    padding: 10px;
+    background-color: red;
+}
+
+.right-usefull-block {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 15px 15px;
+
+    border-radius: 15px;
+
+    padding: 10px;
+    background-color: green;
+}
+
+@media (width <=768px) {
+
+    .left-usefull-block {
+        flex: content;
+        margin: 15px 0px;
+        width: 500px;
+
+    }
+
+    .right-usefull-block {
+        flex-grow: content;
+
+        width: 500px;
+
+        margin: 15px 0px;
+
+    }
+}
