@@ -33,6 +33,9 @@
 @media (width <=768px) {
 
     .left-usefull-block {
+        /* flex includes flex-shrink if you`ll do "none" 
+        that will make flex-shrink "0" and you`ll 
+        have 500px width unshrinkable and need to use width 100% */
         flex: content;
         margin: 15px 0px;
         width: 500px;

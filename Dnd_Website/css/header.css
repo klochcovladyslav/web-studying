@@ -4,7 +4,7 @@ header {
     text-transform: uppercase;
 
     z-index: 98;
-/* header - 98 listheaderbox - 99 btn - 100  */
+    /* header - 98 | listheaderbox - 99 | btn - 100  */
     position: sticky;
     top: 0px;
 }
